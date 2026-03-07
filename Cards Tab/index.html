@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>HDFC MyCards</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts & Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="max-w-[430px] mx-auto w-full relative min-h-screen pb-10 overflow-x-hidden">
+
+    <div class="pt-10 px-5">
+
+        <!-- App Header -->
+        <div class="flex items-center justify-between mb-8 cursor-pointer">
+            <div class="header-icon-bg hover:brightness-110 cursor-pointer">
+                <img src="./Asset/profileicon.svg" alt="Profile" class="w-full h-full object-contain">
+            </div>
+
+            <div class="flex items-center justify-center">
+                <img src="./Asset/mycards.svg" alt="HDFC Bank MyCards"
+                    style="width: 92px; height: 32px; object-fit: contain;">
+            </div>
+
+            <div class="header-icon-bg hover:brightness-110 cursor-pointer relative">
+                <img src="./Asset/notificationicon.svg" alt="Notifications" class="w-full h-full object-contain">
+            </div>
+        </div>
+
+        <!-- Hero Promo Banner -->
+        <div class="mb-8 relative flex items-center overflow-visible h-[140px]">
+            <div class="pl-[4px] z-10">
+                <h2 class="hero-header-text mb-[12px]">MyCards is now live<br>on PayZapp!</h2>
+                <p class="hero-body-text">Manage card, set limits,<br>redeem reward points & more</p>
+            </div>
+
+            <!-- Graphic Floating Menu Container -->
+            <div class="absolute right-[10px] top-[35px] w-[130px] h-[75px] z-20">
+
+                <!-- Background Image overlay positioned behind menu -->
+                <img src="./Asset/Back.svg" alt="Background Element"
+                    class="absolute bottom-[20px] right-[-30px] w-[99px] h-[65px] z-0 pointer-events-none">
+
+                <!-- Transparent Menu on Top -->
+                <div class="absolute inset-0 floating-menu z-10 pointer-events-none">
+
+                    <div class="marquee-item" style="animation-delay: -2s;">
+                        <div class="marquee-item-bg" style="animation-delay: -2s;"></div>
+                        <div class="marquee-content space-x-2.5">
+                            <img src="./Asset/rewardpoints.svg" alt="Reward Points"
+                                class="w-[12px] h-[12px] object-contain flex-shrink-0">
+                            <span class="text-[11px] font-semibold tracking-wide whitespace-nowrap">Reward points</span>
+                        </div>
+                    </div>
+
+                    <div class="marquee-item" style="animation-delay: 0s;">
+                        <div class="marquee-item-bg" style="animation-delay: 0s;"></div>
+                        <div class="marquee-content space-x-2.5">
+                            <img src="./Asset/transactions.svg" alt="Transactions"
+                                class="w-[12px] h-[12px] object-contain flex-shrink-0">
+                            <span class="text-[11px] font-semibold tracking-wide whitespace-nowrap">Transactions</span>
+                        </div>
+                    </div>
+
+                    <div class="marquee-item" style="animation-delay: -4s;">
+                        <div class="marquee-item-bg" style="animation-delay: -4s;"></div>
+                        <div class="marquee-content space-x-2.5">
+                            <img src="./Asset/settings.svg" alt="Card Controls"
+                                class="w-[12px] h-[12px] object-contain flex-shrink-0">
+                            <span class="text-[11px] font-semibold tracking-wide whitespace-nowrap">Card Controls</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 1: HDFC Bank Cards Header -->
+        <div class="flex justify-between items-center mb-4 px-1">
+            <h3 class="section-header tracking-wide">Your HDFC Bank Cards</h3>
+            <button class="text-blue-400 text-[13px] font-bold flex items-center hover:text-blue-300 transition">
+                <span class="material-icons text-[16px] mr-0.5">add</span> Add Card
+            </button>
+        </div>
+
+        <!-- Horizontall Scrollable Quick Actions -->
+        <div class="flex space-x-3.5 mb-8 overflow-x-auto hide-scrollbar -mx-5">
+
+            <button class="action-btn action-btn-1 ml-6 flex-shrink-0">
+                <img src="./Asset/mycards2.svg" alt="My Cards" class="w-8 h-8 object-contain flex-shrink-0">
+                <div class="action-btn-text-1 text-wrap">Go to<br>My Cards</div>
+            </button>
+
+            <button class="action-btn action-btn-2 flex-shrink-0">
+                <img src="./Asset/setresetpin.svg" alt="Set/Reset PIN" class="w-8 h-8 object-contain flex-shrink-0">
+                <div class="action-btn-text-2">Set/Reset PIN</div>
+            </button>
+
+            <button class="action-btn flex-shrink-0">
+                <img src="./Asset/findyourcard.svg" alt="Find Card" class="w-8 h-8 object-contain flex-shrink-0">
+                <div class="action-btn-text-3 text-wrap text-left whitespace-normal">Find your HDFC Bank Card</div>
+            </button>
+
+            <!-- Accurate 24px right padding after accounting for container bleed and gap -->
+            <div class="w-[30px] flex-shrink-0"></div>
+        </div>
+
+        <!-- Card Stack Section -->
+        <div class="space-y-4 mb-10 -mx-5 px-[24px]">
+
+            <!-- PRIVILEGE CARD -->
+            <div class="w-full">
+                <div class="card-container-vert relative">
+                    <img src="./Asset/Privilege.png" alt="Privilege Card"
+                        class="absolute inset-0 w-full h-full object-cover scale-110 translate-y-1">
+
+                    <div class="overdue-pill">
+                        <div class="overdue-text">
+                            <img src="./Asset/Alert.svg" alt="Alert" class="w-[16px] h-[16px]">
+                            <span class="overdue-anim">Overdue</span>
+                        </div>
+                        <span class="material-icons text-[16px] text-white">chevron_right</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BLACK CARD -->
+            <div class="w-full">
+                <div class="card-container-vert relative">
+                    <img src="./Asset/Diners Club.png" alt="Diners Black Card"
+                        class="absolute inset-0 w-full h-full object-cover scale-[1.15] translate-y-1">
+
+                    <div class="due-pill">
+                        <img src="./Asset/Scheduled.svg" alt="Scheduled" class="w-[16px] h-[16px]">
+                        <div class="due-text translate-x-[3px]">
+                            <span class="overdue-anim">Due in 5 Days</span>
+                        </div>
+                        <span class="material-icons text-[16px] text-white ml-auto">chevron_right</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MONEYBACK+ CARD -->
+            <div class="w-full">
+                <div class="card-container-vert relative">
+                    <img src="./Asset/Moneyback+.png" alt="Moneyback+ Card"
+                        class="absolute inset-0 w-full h-full object-cover scale-110 translate-y-1">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Section 2: Other Cards Header -->
+    <div class="flex justify-between items-center mb-4 px-6 mt-6">
+        <h3 class="text-[16px] font-bold tracking-wide">Other Cards</h3>
+        <button class="text-blue-400 text-[13px] font-bold flex items-center hover:text-blue-300 transition">
+            <span class="material-icons text-[16px] mr-1">add</span> Add Card
+        </button>
+    </div>
+
+    <!-- Other Cards List Items -->
+    <div class="mb-14 px-6">
+        <div class="other-cards-container">
+
+            <!-- Axis Bank -->
+            <div class="flex items-center justify-between w-full cursor-pointer hover:opacity-80 transition">
+                <div class="flex items-center gap-[16px]">
+                    <img src="./Asset/Banks and Payment.svg" alt="Axis Bank" class="w-[48px] h-[48px] flex-shrink-0">
+                    <div>
+                        <div class="other-card-title">Axis Bank Credit Card</div>
+                        <div class="other-card-subtitle">XXXX 2356</div>
+                    </div>
+                </div>
+                <span class="material-icons text-[#7b8eaf] text-xl">expand_more</span>
+            </div>
+
+            <div class="other-cards-divider"></div>
+
+            <!-- ICICI Bank -->
+            <div class="flex items-center justify-between w-full cursor-pointer hover:opacity-80 transition">
+                <div class="flex items-center gap-[16px]">
+                    <img src="./Asset/Banks and Payment-1.svg" alt="ICICI Bank" class="w-[48px] h-[48px] flex-shrink-0">
+                    <div>
+                        <div class="other-card-title">ICICI Bank Credit Card</div>
+                        <div class="other-card-subtitle">XXXX 2356</div>
+                    </div>
+                </div>
+                <span class="material-icons text-[#7b8eaf] text-xl">expand_more</span>
+            </div>
+
+            <div class="other-cards-divider"></div>
+
+            <!-- Union Bank -->
+            <div class="flex items-center justify-between w-full cursor-pointer hover:opacity-80 transition">
+                <div class="flex items-center gap-[16px]">
+                    <img src="./Asset/Banks and Payment-2.svg" alt="Union Bank" class="w-[48px] h-[48px] flex-shrink-0">
+                    <div>
+                        <div class="other-card-title">Union Bank Debit Card</div>
+                        <div class="other-card-subtitle">XXXX 2356</div>
+                    </div>
+                </div>
+                <span class="material-icons text-[#7b8eaf] text-xl">expand_more</span>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bottom Security Footer Section -->
+    <div class="relative flex flex-col items-center justify-center mt-12 mb-10 h-32 overflow-hidden w-full">
+        <!-- Large Background text -->
+        <div class="safe-place-text">
+            SAFE PLACE FOR<br>Y<img src="./Asset/lock.svg" alt="Lock"
+                class="inline-block w-[40px] h-auto align-middle mb-[26px] -mx-[7px] relative z-10">UR CARDS
+        </div>
+    </div>
+
+    <!-- Trust Badges Row -->
+    <div class="flex justify-center items-center h-auto gap-[16px] pb-6 mt-4">
+        <img src="./Asset/Visa-Horizontal.svg" alt="Visa" class="h-[22px]">
+        <img src="./Asset/MasterCard-Horizontal.svg" alt="MasterCard" class="h-[22px]">
+        <img src="./Asset/PCI.svg" alt="PCI DSS" class="h-[20px]">
+        <img src="./Asset/dinerclub.svg" alt="Diners Club" class="h-[34px]">
+        <img src="./Asset/rupay.svg" alt="RuPay" class="h-[22px]">
+    </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

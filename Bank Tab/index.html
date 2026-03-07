@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>HDFC Bank - One Stop Banking</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Paytone+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <main class="main-content">
+            <!-- Top Container -->
+            <section class="top-container">
+                <!-- Header -->
+                <header class="header">
+                    <button class="icon-btn" aria-label="Profile">
+                        <img src="Asset/user.svg" alt="Profile" class="header-icon">
+                    </button>
+                    <button class="icon-btn" aria-label="Notifications">
+                        <img src="Asset/notification.svg" alt="Notifications" class="header-icon">
+                    </button>
+                </header>
+
+                <div class="hero-text">
+                    <h1>One Stop Banking for You</h1>
+                    <p>Fast-track your banking<br>with zero paperwork</p>
+                    <button class="btn-primary">
+                        Get Started <img src="Asset/chevron-up.svg" alt="Right chevron">
+                    </button>
+                </div>
+
+                <img src="Asset/Mobile.svg" class="hero-mobile-img" alt="Mobile App">
+            </section>
+
+            <!-- Products for You -->
+            <section class="section">
+                <h2 class="section-title">Products for you</h2>
+                <div class="product-grid">
+                    <div class="product-card bg-payzapp">
+                        <div class="card-content">
+                            <h3>PayZapp Wallet</h3>
+                            <p>Secure digital wallet,<br>effortless payments</p>
+                        </div>
+                        <div class="card-action">
+                            <button class="arrow-btn"><span
+                                    class="material-symbols-rounded">arrow_forward</span></button>
+                            <img src="Asset/payzappwallet.svg" class="product-vector-img" alt="PayZapp">
+                        </div>
+                    </div>
+                    <div class="product-card bg-rupay">
+                        <div class="card-content">
+                            <h3>RuPay UPI Card</h3>
+                            <p>Instant UPI, assured<br>rewards & cashbacks</p>
+                        </div>
+                        <div class="card-action">
+                            <button class="arrow-btn"><span
+                                    class="material-symbols-rounded">arrow_forward</span></button>
+                            <img src="Asset/rupaycreditcard.svg" class="product-vector-img" alt="RuPay">
+                        </div>
+                    </div>
+                    <div class="product-card bg-pixel">
+                        <div class="card-content">
+                            <h3>Pixel Credit Card</h3>
+                            <p>Personalised card,<br>tailored experience</p>
+                        </div>
+                        <div class="card-action">
+                            <button class="arrow-btn"><span
+                                    class="material-symbols-rounded">arrow_forward</span></button>
+                            <img src="Asset/pixelcreditcard.svg" class="product-vector-img" alt="Pixel Card">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Explore More Products -->
+            <section class="section pt-0">
+                <h2 class="section-title">Explore More Products</h2>
+
+                <!-- Accounts -->
+                <div class="category-block">
+                    <h3 class="category-title">ACCOUNTS</h3>
+                    <div class="grid-4">
+                        <div class="grid-item">
+                            <div class="icon-circle">
+                                <img src="Asset/Savings Account.svg" class="asset-icon" alt="Savings Accounts">
+                            </div>
+                            <span class="item-label">Savings<br>Accounts</span>
+                        </div>
+                        <div class="grid-item">
+                            <div class="icon-circle">
+                                <img src="Asset/Fixed Deposit.svg" class="asset-icon" alt="Fixed Deposit">
+                            </div>
+                            <span class="item-label">Fixed<br>Deposit</span>
+                        </div>
+                        <div class="grid-item">
+                            <div class="icon-circle">
+                                <img src="Asset/FASTag.svg" class="asset-icon" alt="FASTag">
+                            </div>
+                            <span class="item-label">FASTag</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cards -->
+                <div class="category-block">
+                    <h3 class="category-title">CARDS</h3>
+                    <div class="grid-4">
+                        <div class="grid-item">
+                            <div class="icon-circle icon-accent">
+                                <img src="Asset/Icon(L).svg" class="asset-icon" alt="Credit Card">
+                            </div>
+                            <span class="item-label">Credit<br>Card</span>
+                        </div>
+                        <div class="grid-item">
+                            <div class="icon-circle icon-accent">
+                                <img src="Asset/Increase Credit Limit.svg" class="asset-icon"
+                                    alt="Increase Credit Limit">
+                            </div>
+                            <span class="item-label">Increase<br>Credit Limit</span>
+                        </div>
+                        <div class="grid-item">
+                            <div class="icon-circle icon-accent">
+                                <img src="Asset/Upgrade Credit Card.svg" class="asset-icon" alt="Upgrade Credit Card">
+                            </div>
+                            <span class="item-label">Upgrade<br>Credit Card</span>
+                        </div>
+                        <div class="grid-item">
+                            <div class="icon-circle icon-accent">
+                                <img src="Asset/Gift Card.svg" class="asset-icon" alt="Gift Card">
+                            </div>
+                            <span class="item-label">Gift<br>Card</span>
+                        </div>
+                        <div class="grid-item">
+                            <div class="icon-circle icon-accent">
+                                <img src="Asset/Forex Card.svg" class="asset-icon" alt="Forex Card">
+                            </div>
+                            <span class="item-label">Forex<br>Card</span>
+                        </div>
+                        <div class="grid-item">
+                            <div class="icon-circle icon-accent">
+                                <img src="Asset/Reload Forex Card.svg" class="asset-icon" alt="Reload Forex Card">
+                            </div>
+                            <span class="item-label">Reload<br>Forex Card</span>
+                        </div>
+                        <div class="grid-item">
+                            <div class="icon-circle icon-accent">
+                                <img src="Asset/Refer Credit Card.svg" class="asset-icon" alt="Refer Credit Card">
+                            </div>
+                            <span class="item-label">Refer<br>Credit Card</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Loans -->
+                <div class="category-block">
+                    <h3 class="category-title">LOANS</h3>
+                    <div class="grid-4">
+                        <div class="grid-item">
+                            <div class="icon-circle icon-danger">
+                                <img src="Asset/Smart EMI.svg" class="asset-icon" alt="Smart EMI">
+                            </div>
+                            <span class="item-label">Smart<br>EMI</span>
+                        </div>
+                        <div class="grid-item">
+                            <div class="icon-circle icon-danger">
+                                <img src="Asset/Loan on Credit Card.svg" class="asset-icon" alt="Loan on Credit Card">
+                            </div>
+                            <span class="item-label">Loan on<br>Credit Card</span>
+                        </div>
+                        <div class="grid-item">
+                            <div class="icon-circle icon-danger">
+                                <img src="Asset/Personal Loan.svg" class="asset-icon" alt="Personal Loan">
+                            </div>
+                            <span class="item-label">Personal<br>Loan</span>
+                        </div>
+                        <div class="grid-item">
+                            <div class="icon-circle icon-danger">
+                                <img src="Asset/Consumer Loan Club.svg" class="asset-icon" alt="Consumer Loan Club">
+                            </div>
+                            <span class="item-label">Consumer<br>Loan Club</span>
+                        </div>
+                        <div class="grid-item">
+                            <div class="icon-circle icon-danger">
+                                <img src="Asset/Home Loan.svg" class="asset-icon" alt="Home Loan">
+                            </div>
+                            <span class="item-label">Home<br>Loan</span>
+                        </div>
+                        <div class="grid-item">
+                            <div class="icon-circle icon-danger">
+                                <img src="Asset/Auto Loan.svg" class="asset-icon" alt="Auto Loan">
+                            </div>
+                            <span class="item-label">Auto Loan</span>
+                        </div>
+                        <div class="grid-item">
+                            <div class="icon-circle icon-danger">
+                                <img src="Asset/Two Wheeler Loan.svg" class="asset-icon" alt="Two-wheeler Loan">
+                            </div>
+                            <span class="item-label">Two-wheeler<br>Loan</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Insurance -->
+                <div class="category-block">
+                    <h3 class="category-title">INSURANCE</h3>
+                    <div class="grid-4">
+                        <div class="grid-item">
+                            <div class="icon-circle icon-insurance">
+                                <img src="Asset/Cyber Suraksha.svg" class="asset-icon" alt="Cyber Suraksha">
+                            </div>
+                            <span class="item-label">Cyber<br>Suraksha</span>
+                        </div>
+                        <div class="grid-item">
+                            <div class="icon-circle icon-insurance">
+                                <img src="Asset/Health & OPD.svg" class="asset-icon" alt="Health & OPD">
+                            </div>
+                            <span class="item-label">Health<br>& OPD</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="explore-all-container">
+                    <button class="btn-explore-all">
+                        <img src="Asset/exploreproducts.svg" class="explore-icon" alt="HDFC">
+                        <span>Explore all HDFC Bank products</span>
+                        <img src="Asset/chevron-up.svg" class="chevron-icon" alt="Right chevron">
+                    </button>
+                </div>
+            </section>
+
+            <!-- Quick Actions -->
+            <section class="section">
+                <h2 class="section-title">Quick Actions</h2>
+                <div class="grid-4">
+                    <div class="grid-item">
+                        <div class="icon-circle icon-quick">
+                            <img src="Asset/Mobile Banking.svg" class="asset-icon" alt="Mobile Banking">
+                        </div>
+                        <span class="item-label">Mobile<br>Banking</span>
+                    </div>
+                    <div class="grid-item">
+                        <div class="icon-circle icon-quick">
+                            <img src="Asset/Mycards.svg" class="asset-icon" alt="MyCards">
+                        </div>
+                        <span class="item-label">MyCards</span>
+                    </div>
+                    <div class="grid-item">
+                        <div class="icon-circle icon-quick">
+                            <img src="Asset/xpresswayicon.svg" class="asset-icon" alt="Xpressway">
+                        </div>
+                        <span class="item-label">Xpressway</span>
+                    </div>
+                    <div class="grid-item">
+                        <div class="icon-circle icon-quick">
+                            <img src="Asset/Smart Wealth.svg" class="asset-icon" alt="Smart Wealth">
+                        </div>
+                        <span class="item-label">Smart<br>Wealth</span>
+                    </div>
+                    <div class="grid-item">
+                        <div class="icon-circle icon-quick">
+                            <img src="Asset/HDFC Sky.svg" class="asset-icon" alt="HDFC Sky">
+                        </div>
+                        <span class="item-label">HDFC Sky</span>
+                    </div>
+                    <div class="grid-item">
+                        <div class="icon-circle icon-quick">
+                            <img src="Asset/Corporate Salary.svg" class="asset-icon" alt="Corporate Salary">
+                        </div>
+                        <span class="item-label">Corporate<br>Salary</span>
+                    </div>
+                    <div class="grid-item">
+                        <div class="icon-circle icon-quick">
+                            <img src="Asset/Faith 360.svg" class="asset-icon" alt="Faith 360">
+                        </div>
+                        <span class="item-label">Faith 360</span>
+                    </div>
+                    <div class="grid-item">
+                        <div class="icon-circle icon-quick">
+                            <img src="Asset/Digital Rupee.svg" class="asset-icon" alt="Digital Rupee">
+                        </div>
+                        <span class="item-label">Digital<br>Rupee</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bottom Banner -->
+            <section class="bottom-branding">
+                <h1 class="branding-title">YOUR ONE STOP<br>BANKING<br>SOLUTION</h1>
+                <div class="powered-by">
+                    <span class="powered-text">POWERED BY</span>
+                    <div class="brand-logos">
+                        <img src="Asset/hdfcbank.svg" class="brand-logo-img" alt="HDFC Bank">
+                        <img src="Asset/now.svg" class="brand-logo-img now" alt="now">
+                        <img src="Asset/xpresswayhorizontal.svg" class="brand-logo-img" alt="Xpressway">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Padding for bottom nav -->
+            <div class="bottom-padding"></div>
+        </main>
+
+        <!-- Bottom Navigation -->
+        <nav class="bottom-nav">
+            <a href="#" class="nav-item">
+                <img src="Asset/rupee.svg" class="nav-icon" alt="Pay">
+                <span>Pay</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img src="Asset/card.svg" class="nav-icon" alt="Cards">
+                <span>Cards</span>
+            </a>
+
+            <div class="scan-btn-wrapper">
+                <button class="scan-btn">
+                    <img src="Asset/Scan.svg" class="scan-btn-img" alt="Scan">
+                </button>
+            </div>
+
+            <a href="#" class="nav-item">
+                <img src="Asset/Shopping/Bag.svg" class="nav-icon" alt="Shop">
+                <span>Shop</span>
+            </a>
+            <a href="#" class="nav-item active">
+                <img src="Asset/Bank.svg" class="nav-icon" alt="Bank">
+                <span>Bank</span>
+            </a>
+        </nav>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
